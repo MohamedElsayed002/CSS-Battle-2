@@ -1,0 +1,54 @@
+<div>
+    <p a>
+        <p b>
+            <p c>
+</div>
+<style>
+    body {
+        background: #09042A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    div {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    p[c] {
+        width: 50px;
+        height: 111px;
+        position: absolute;
+        top: 80;
+        background: #09042A;
+        border-radius: 90%;
+        left: 175;
+    }
+    
+    p[a] {
+        width: 150px;
+        height: 150px;
+        background: #7B3F61;
+        border-radius: 50%;
+        position: absolute;
+        top: 60;
+        left: 75;
+        overflow: hidden;
+        z-index: -1
+    }
+    
+    p[b] {
+        width: 150px;
+        height: 150px;
+        background: #E78481;
+        z-index: -1;
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        left: 175
+    }
+</style>
